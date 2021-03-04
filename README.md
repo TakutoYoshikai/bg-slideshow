@@ -1,6 +1,11 @@
 # bg-slideshow
 This is a program to change desktop picture at a certain interval.
 
+### Requirements
+* Ubuntu 20.10
+* Node.js
+
+
 ### Usage
 **install**
 ```bash
