@@ -7,9 +7,9 @@ function changeBgImage(absPath) {
 }
 
 
-function loadImages() {
+function loadImages(dir) {
   return new Promise((resolve, reject) => {
-    fs.readdir("images", (err, files) => {
+    fs.readdir(dir, (err, files) => {
       if (err) {
         reject(err);
         return;
@@ -17,14 +17,14 @@ function loadImages() {
       resolve(files.filter(file => {
         return file[0] !== ".";
       }).map(file => {
-        return toAbsPath("images/" + file);
+        return toAbsPath(dir + "/" + file);
       }));
     });
   });
 }
 
-async function start(ms) {
-  const images = await loadImages();
+async function start(dir, ms) {
+  const images = await loadImages(dir);
   let index = 0;
   setInterval(() => {
     changeBgImage(images[index]);
