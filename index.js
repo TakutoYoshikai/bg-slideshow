@@ -23,10 +23,11 @@ function loadImages(dir) {
   });
 }
 
+let timer = null;
 async function start(dir, ms) {
   const images = await loadImages(dir);
   let index = 0;
-  setInterval(() => {
+  timer = setInterval(() => {
     changeBgImage(images[index]);
     index++;
     if (index === images.length) {
@@ -35,5 +36,12 @@ async function start(dir, ms) {
   }, ms);
 }
 
-module.exports = start;
+function stop() {
+  clearInterval(timer);
+}
+
+module.exports = {
+  start,
+  stop
+}
 

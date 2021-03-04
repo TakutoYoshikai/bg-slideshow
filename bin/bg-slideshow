@@ -1,5 +1,5 @@
 #!/usr/bin/env node
 
-const start = require("../index");
+const { start } = require("../index");
 start(process.argv[2], parseInt(process.argv[3]));
 

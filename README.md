@@ -16,8 +16,9 @@ bg-slideshow <IMAGE DIR> <INTERVAL MS>
 
 **example**
 ```javascript
-const start = require("bg-slideshow");
+const { start, stop } = require("bg-slideshow");
 start(1000); //The interval to change desktop image is 1 minite.
+stop();
 ```
 
 ### License
