@@ -5,6 +5,13 @@ This is a program to change desktop picture at a certain interval.
 **install**
 ```bash
 npm install --save TakutoYoshikai/bg-slideshow
+# Run below if you use bg-slideshow command.
+npm install -g TakutoYoshikai/bg-slideshow
+```
+
+**shell command**
+```bash
+bg-slideshow <IMAGE DIR> <INTERVAL MS>
 ```
 
 **example**
