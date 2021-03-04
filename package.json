@@ -1,0 +1,24 @@
+{
+  "name": "bg-slideshow",
+  "version": "1.0.0",
+  "description": "This is a program to change desktop picture at a certain interval.",
+  "main": "index.js",
+  "private": true,
+  "bin": {
+    "bg-slideshow": "./bin/bg-slideshow"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TakutoYoshikai/bg-slideshow.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TakutoYoshikai/bg-slideshow/issues"
+  },
+  "homepage": "https://github.com/TakutoYoshikai/bg-slideshow#readme"
+}
