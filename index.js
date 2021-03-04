@@ -25,7 +25,6 @@ function loadImages() {
 
 async function start(ms) {
   const images = await loadImages();
-  console.log(images);
   let index = 0;
   setInterval(() => {
     changeBgImage(images[index]);
@@ -37,3 +36,4 @@ async function start(ms) {
 }
 
 module.exports = start;
+
