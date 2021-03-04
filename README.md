@@ -10,7 +10,7 @@ npm install --save TakutoYoshikai/bg-slideshow
 **example**
 ```javascript
 const start = require("bg-slideshow");
-start(1000); //interval to change desktop image is 1 minite.
+start(1000); //The interval to change desktop image is 1 minite.
 ```
 
 ### License
