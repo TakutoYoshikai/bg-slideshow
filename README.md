@@ -2,8 +2,10 @@
 This is a program to change desktop picture at a certain interval.
 
 ### Requirements
-* Ubuntu 20.10
+* macOS or Ubuntu 20.10
 * Node.js
+* npm
+* [wallpaper](https://github.com/sindresorhus/macos-wallpaper) (if it's macOS)
 
 
 ### Usage
