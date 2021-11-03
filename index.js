@@ -1,9 +1,14 @@
 const execSync = require("child_process").execSync;
 const toAbsPath = require("path").resolve;
 const fs = require("fs");
+const os = require("os");
 
 function changeBgImage(absPath) {
-  execSync("gsettings set org.gnome.desktop.background picture-uri 'file://" + absPath + "'");
+  if (os.platform() == "darwin") {
+    execSync("wallpaper set '" + absPath + "'"); 
+  } else {
+    execSync("gsettings set org.gnome.desktop.background picture-uri 'file://" + absPath + "'");
+  }
 }
 
 
